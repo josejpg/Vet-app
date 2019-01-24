@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-ene-2019 14:46:19 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="hibernate.Perro" table="perro" optimistic-lock="version">
+        <composite-id name="id" class="hibernate.PerroId">
+            <key-property name="id" type="int">
+                <column name="id" />
+            </key-property>
+            <key-property name="nombre" type="string">
+                <column name="nombre" />
+            </key-property>
+            <key-property name="edad" type="int">
+                <column name="edad" />
+            </key-property>
+            <key-property name="raza" type="string">
+                <column name="raza" />
+            </key-property>
+            <key-property name="color" type="string">
+                <column name="color" />
+            </key-property>
+            <key-property name="observaciones" type="string">
+                <column name="observaciones" />
+            </key-property>
+            <key-property name="pelaje" type="string">
+                <column name="pelaje" />
+            </key-property>
+            <key-property name="peligrosa" type="boolean">
+                <column name="peligrosa" />
+            </key-property>
+            <key-property name="sexo" type="char">
+                <column name="sexo" length="1" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
